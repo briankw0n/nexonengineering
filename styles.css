@@ -269,6 +269,10 @@ footer img {
   .navbar ul li {
     margin: 0 10px;
   }
+
+  .navbar ul li a {
+    display: none;
+  }
   
   #welcome {
     padding-top: 20%;

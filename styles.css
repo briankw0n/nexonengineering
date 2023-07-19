@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 ::-webkit-scrollbar {
   display: none;
@@ -11,6 +12,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  /* padding-left: 20%;
+  padding-right: 20%; */
   font-family: "Roboto", sans-serif;
   font-size: 15pt;
   color: white;
@@ -24,35 +27,37 @@ h2, h3 {
   text-transform: uppercase;
 }
 
-.container {
-  /* width: 100%;
-  height: 100vh;
-  background-image: url(background.jpg);
-  background-size: cover;
-  background-position: center; */
-  /* overflow: hidden; */
-}
-
 .navbar {
-  width: 95%;
-  margin: auto;
-  /* padding: 10px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* height: 5%; */
+  height: 70px;
+  padding: 10px;
+  background-color: white;
+}
+
+.navbar a {
+  display: inline-block;
+  height: 100%;
 }
 
 .navbar img {
-  width: 15%;
+  height: 100%;
+  vertical-align: middle;
 }
 
-.logo {
-  width: 120px;
-  cursor: pointer;
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar ul li {
-  list-style: none;
   display: inline-block;
   margin: 0 20px;
   font-weight: bold;
@@ -64,18 +69,19 @@ h2, h3 {
   text-transform: uppercase;
 }
 
-.welcome {
-  /* width: 100%; */
-  /* height: 200%; */
+main {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#welcome {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('background.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 5%;
-  /* margin: 100px; */
-  /* padding: 100px; */
 }
 
 .letter-spacing {
@@ -95,37 +101,40 @@ h1 {
 }
 
 .card-container img {
-  width: 12%;
+  width: 20%;
   height: auto;
   object-fit: contain;
 }
 
 .content {
   color: black;
-  margin-left: 20%;
-  margin-right: 20%;
+}
+
+.content h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 35pt;
+  text-align: center;
+  scroll-margin-top: 5rem;
 }
 
 #about-us {
   display: flex;
+  align-items: center;
   justify-content: center;
   text-align: center;
   gap: 10%;
 }
 
-.c1 h2, .c1 h3, .c2 h2, .c2 h3 {
-  /* text-transform: uppercase; */
-}
-
 .c1 {
-  text-align: left;
+  /* text-align: left; */
 }
 
 .c1 p {
   text-align: justify;
 }
 
-.c2 {
+.box {
   text-align: justify;
   border: 5px solid black;
   padding: 5%;
@@ -138,6 +147,108 @@ h1 {
   text-align: left;
 }
 
+#services {
+  scroll-margin-top: 5rem;
+}
+
+#services h1 {
+  text-align: left;
+}
+
+.center {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 5%;
+}
+
 #services p {
   text-align: justify;
 }
+
+#services img {
+  height: 50%;
+  width: 50%;
+}
+
+.info {
+  display: flex;
+  gap: 5%;
+}
+
+#contact-us {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-top: 3%;
+  padding-left: 20%;
+  padding-right: 20%;
+  /* padding-bottom: 45%; */
+  scroll-margin-top: 5rem;
+  height: 150x;
+}
+
+#contact-us a {
+  /* font-size: 15pt; */
+}
+
+#contact-us img {
+  /* padding-right: 5%; */
+  width: 100px;
+  height: 100px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  
+}
+
+.address a {
+  text-decoration: none;
+  color: black;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  /* gap: 10%; */
+}
+
+.email a {
+  text-decoration: none;
+  color: black;
+}
+
+.adjust {
+  margin-bottom: 5%;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  /* gap: 15%; */
+}
+
+.phone a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  /* height: 85vh; */
+  height: calc(100vh - 220px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  filter: brightness(0) invert(1);
+}
+
+/* :root {
+  --contact-us-height: 200px;
+} */

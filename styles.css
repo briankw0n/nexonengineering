@@ -172,7 +172,10 @@ h1 {
 
 .info {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 5%;
+  margin-top: 5%;
 }
 
 #contact-us {
@@ -252,3 +255,112 @@ footer img {
 /* :root {
   --contact-us-height: 200px;
 } */
+
+@media (max-width: 767px) {
+  body {
+    font-size: 12pt;
+  }
+  
+  .navbar {
+    height: 50px;
+    padding: 5px;
+  }
+  
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  
+  #welcome {
+    padding-top: 20%;
+    padding-bottom: 10%;
+  }
+  
+  h1 {
+    font-size: 35pt;
+  }
+
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .card-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  .card-container img {
+    display: none;
+  }
+  
+  .content h1 {
+    font-size: 25pt;
+  }
+  
+  #about-us {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .c1, .c2 {
+    text-align: center;
+  }
+  
+  .c1 p {
+    text-align: center;
+  }
+  
+  .box {
+    padding: 2%;
+  }
+  
+  .c2 h3 {
+    text-align: center;
+  }
+
+  #services h1,h2 {
+    text-align: center;
+  }
+  
+  .info {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .info img {
+    display: none;
+  }
+
+  .info h3 {
+    text-align: center;
+  }
+  
+  #contact-us {
+    /* flex-direction: column; */
+    /* gap: 0; */
+    display: flex;
+    padding: 3%;
+  }
+
+  #contact-us img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .address, .email, .phone {
+    /* margin-bottom: 10px; */
+  }
+
+  .hide {
+    display: none;
+  }
+  
+  footer {
+    height: 100px;
+  }
+  
+  footer img {
+    width: 50px;
+    height: 50px;
+  }
+}

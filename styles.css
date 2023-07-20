@@ -256,6 +256,31 @@ footer img {
   --contact-us-height: 200px;
 } */
 
+@media (min-width: 768px) and (max-width: 1920px) {
+  main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #contact-us {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #contact-us img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .address strong, .email p, .phone p {
+    font-size: 12pt;
+  }
+
+  .address a, .email a, .phone a {
+    font-size: 12pt;
+  }
+}
+
 @media (max-width: 767px) {
   body {
     font-size: 12pt;

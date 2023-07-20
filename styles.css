@@ -69,6 +69,10 @@ h2, h3 {
   text-transform: uppercase;
 }
 
+.hide1 {
+  display: none;
+}
+
 main {
   padding-left: 20%;
   padding-right: 20%;
@@ -287,17 +291,28 @@ footer img {
   }
   
   .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 50px;
     padding: 5px;
+  }
+
+  .navbar ul {
+    display: none;
   }
   
   .navbar ul li {
     margin: 0 10px;
   }
 
-  .navbar ul li a {
+  /* .navbar ul li a {
     display: none;
-  }
+  } */
   
   #welcome {
     padding-top: 20%;
@@ -380,7 +395,22 @@ footer img {
     /* margin-bottom: 10px; */
   }
 
-  .hide {
+  .hide1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+  }
+
+  .hide1 a:first-child {
+    /* margin-left: 50%; */
+  }
+
+  .hide2 {
+    display: none;
+  }
+
+  .hide3 {
     display: none;
   }
   

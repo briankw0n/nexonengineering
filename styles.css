@@ -159,6 +159,10 @@ h1 {
   text-align: left;
 }
 
+#services p {
+  /* text-align: justify; */
+}
+
 .center {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -298,8 +302,13 @@ footer img {
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 25px;
     padding: 5px;
+  }
+
+  .hide1 {
+    /* width: auto; */
+    height: 100%;
   }
 
   .navbar ul {
@@ -310,9 +319,9 @@ footer img {
     margin: 0 10px;
   }
 
-  /* .navbar ul li a {
-    display: none;
-  } */
+  .navbar ul li a {
+    /* display: none; */
+  }
   
   #welcome {
     padding-top: 20%;
@@ -351,7 +360,7 @@ footer img {
   }
   
   .c1 p {
-    text-align: center;
+    text-align: justify;
   }
   
   .box {
@@ -415,7 +424,7 @@ footer img {
   }
   
   footer {
-    height: 100px;
+    height: 75px;
   }
   
   footer img {

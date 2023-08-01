@@ -212,7 +212,7 @@ h1 {
 .gallery img {
   width: 400px;
   height: 300px;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 @keyframes loop {

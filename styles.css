@@ -35,11 +35,11 @@ h2, h3 {
   top: 0;
   left: 0;
   right: 0;
-  /* height: 5%; */
-  height: 70px;
+  height: 45px;
   padding: 10px;
   background-color: white;
   z-index: 100;
+  transition: background-color 1s;
 }
 
 .navbar a {
@@ -70,8 +70,40 @@ h2, h3 {
   text-transform: uppercase;
 }
 
+.navbar.scrolled {
+  /* background-color: rgb(65, 65, 65); */
+  background-color: black;
+}
+
+.navbar.scrolled ul li a {
+  color: white;
+}
+
+.navbar.scrolled a:nth-child(2) img {
+  filter: invert(1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logo-container img {
+  width: 45px;
+}
+
+.logo-container a:nth-child(2) img {
+  display: inline-block;
+  width: 120px;
+}
+
 .hide1 {
   display: none;
+}
+
+.hide1.scrolled a img {
+  filter: invert(1);
 }
 
 main {
@@ -222,21 +254,20 @@ h1 {
   }
 }
 
-#contact-us {
+#contact-us h1 {
+  text-align: left;
+}
+
+.links {
   color: black;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  margin-top: 3%;
-  padding-left: 20%;
-  padding-right: 20%;
-  /* padding-bottom: 45%; */
+  margin-top: 1%;
   scroll-margin-top: 6rem;
-  height: 150x;
 }
 
-#contact-us img {
-  /* padding-right: 5%; */
+.links img {
   width: 100px;
   height: 100px;
 }
@@ -284,16 +315,18 @@ h1 {
 footer {
   background-color: black;
   /* height: 85vh; */
-  height: calc(100vh - 220px);
+  /* height: calc(100vh - 220px); */
+  height: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 10pt;
 }
 
 footer img {
   filter: brightness(0) invert(1);
-  width: 100px;
+  width: 30px;
 }
 
 /* :root {
@@ -306,12 +339,7 @@ footer img {
     padding-right: 10%;
   }
 
-  #contact-us {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  #contact-us img {
+  .links img {
     width: 75px;
     height: 75px;
   }
@@ -346,9 +374,13 @@ footer img {
     padding: 5px;
   }
 
-  .hide1 {
-    /* width: auto; */
-    height: 100%;
+  .navbar img {
+    width: 30px;
+    display: inline-block;
+  }
+  
+  .logo-container a:nth-child(2) img {
+    width: 80px;
   }
 
   .navbar ul {
@@ -426,14 +458,18 @@ footer img {
     text-align: center;
   }
 
-  #contact-us {
+  #contact-us h1 {
+    display: none;
+  }
+
+  .links {
     /* flex-direction: column; */
     /* gap: 0; */
     display: flex;
     padding: 3%;
   }
 
-  #contact-us img {
+  .links img {
     height: 100%;
     width: 100%;
   }

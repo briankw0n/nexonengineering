@@ -154,7 +154,7 @@ h1 {
   text-transform: uppercase;
   font-size: 35pt;
   text-align: center;
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 5rem;
 }
 
 #about-us {
@@ -171,6 +171,7 @@ h1 {
 
 .c1 p {
   text-align: justify;
+  color: black;
 }
 
 .box {
@@ -188,11 +189,15 @@ h1 {
 }
 
 #services {
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 5rem;
 }
 
 #services h1 {
   text-align: left;
+}
+
+#services p {
+  color: black;
 }
 
 .center {
@@ -220,7 +225,7 @@ h1 {
 
 #projects {
   /* margin-top: 5%; */
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 5rem;
 }
 
 #projects h1 {
@@ -254,74 +259,115 @@ h1 {
   }
 }
 
+#contact-us {
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: black;
+  color: white;
+}
+
 #contact-us h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 35pt;
   text-align: left;
+  scroll-margin-top: 5rem;
+  padding-top: 2%;
+}
+
+#contact-us p {
+  color: white;
+}
+
+.contact-us-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-us-logo {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px; */
+
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  margin-left: 5%;
+}
+
+.contact-us-logo img {
+  display: inline-block;
+  width: 50px;
+  filter: brightness(0) invert(1);
+}
+
+.contact-us-logo img:nth-child(2) {
+  width: 100px;
+  position: relative;
+  bottom: -5px;
 }
 
 .links {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   color: black;
-  display: flex;
-  justify-content: space-between;
   text-transform: uppercase;
-  margin-top: 1%;
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 5rem;
 }
 
 .links img {
-  width: 100px;
-  height: 100px;
+  width: 50x;
+  height: 50px;
+  filter: invert(1);
+}
+
+.links p {
+  font-size: 10pt;
+}
+
+.address a, .email a, .phone a {
+  text-decoration: none;
 }
 
 .address {
   display: flex;
-  align-items: center;
-}
-
-.address a {
-  text-decoration: none;
-  color: black;
+  align-items: right;
+  justify-content: right;
 }
 
 .email {
   display: flex;
-  align-items: center;
-  /* gap: 10%; */
-}
-
-.email a {
-  text-decoration: none;
-  color: black;
-}
-
-.adjust1 {
-  margin-bottom: 5%;
-}
-
-.adjust2 {
-  margin-bottom: 10%;
+  align-items: right;
+  justify-content: right;
 }
 
 .phone {
   display: flex;
-  align-items: center;
-  /* gap: 15%; */
+  align-items: right;
+  justify-content: right;
 }
 
-.phone a {
-  text-decoration: none;
-  color: black;
+.address p {
+  position: relative;
+  top: -10px;
+}
+
+.adjust1 {
+  position: relative;
+  left: -15px;
+  top: -10px;
+}
+
+.adjust2 {
+  position: relative;
+  left: -150px;
 }
 
 footer {
+  display: none;
   background-color: black;
   /* height: 85vh; */
   /* height: calc(100vh - 220px); */
-  height: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 10pt;
 }
 
 footer img {
@@ -339,15 +385,14 @@ footer img {
     padding-right: 10%;
   }
 
-  .links img {
-    width: 75px;
-    height: 75px;
+  #contact-us {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
-  .address strong,
-  .email p,
-  .phone p {
-    font-size: 12pt;
+  .links img {
+    width: 50px;
+    height: 50px;
   }
 
   .address a,
@@ -458,7 +503,7 @@ footer img {
     text-align: center;
   }
 
-  #contact-us h1 {
+  #contact-us {
     display: none;
   }
 
@@ -490,7 +535,13 @@ footer img {
   }
 
   footer {
-    height: 60px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+    margin-top: 3%;
   }
 
   footer img {

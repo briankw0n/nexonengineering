@@ -104,7 +104,6 @@ h2, h3 {
 .logo-container {
   display: flex;
   align-items: center;
-  margin-left: 10px;
 }
 
 .logo-container img {

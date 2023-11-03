@@ -104,6 +104,7 @@ h2, h3 {
 .logo-container {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 
 .logo-container img {
@@ -372,7 +373,7 @@ h1 {
 
 .adjust2 {
   position: relative;
-  left: -150px;
+  left: -147px;
 }
 
 footer {
